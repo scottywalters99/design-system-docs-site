@@ -1,0 +1,42 @@
+{
+  "name": "design-system",
+  "version": "0.0.1",
+  "description": "The documentation website for the Design System.",
+  "main": "index.js",
+  "authors": {
+    "name": "Scotty Walters",
+    "email": "scottywalters99@gmail.com"
+  },
+  "repository": "https://github.com/scottywalters/design-system.git/design-system",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "serve": "serve docs/.vuepress/dist",
+    "lint-md": "yarn lint-md:style && yarn lint-md:wording",
+    "lint-md:style": "remark --quiet --frail .",
+    "lint-md:wording": "textlint ./docs/**/**/*.md"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@textlint-rule/textlint-rule-no-unmatched-pair": "^1.0.7",
+    "remark-cli": "^9.0.0",
+    "remark-lint": "^6.0.5",
+    "remark-preset-lint-consistent": "^2.0.3",
+    "remark-preset-lint-recommended": "^3.0.3",
+    "textlint": "^11.8.2",
+    "textlint-filter-rule-comments": "^1.2.2",
+    "textlint-rule-apostrophe": "^1.0.0",
+    "textlint-rule-common-misspellings": "^1.0.1",
+    "textlint-rule-diacritics": "^1.0.0",
+    "textlint-rule-en-capitalization": "^2.0.2",
+    "textlint-rule-stop-words": "^2.0.8",
+    "textlint-rule-terminology": "^2.1.4",
+    "textlint-rule-write-good": "^1.6.2",
+    "vuepress": "^1.8.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.17.3",
+    "vue": "^2.6.12"
+  }
+}

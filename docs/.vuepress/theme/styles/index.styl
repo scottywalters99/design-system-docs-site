@@ -1,0 +1,66 @@
+@require './toc';
+
+body {
+  font-family: $fontFamily;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $robotoFont;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+p, ul, ol {
+  line-height: 1.5;
+}
+
+.theme-default-content img {
+  background: #FFF;
+}
+
+/**
+ *  Main page
+ */
+main.page {
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+
+/**
+ * Navbar
+ */
+.nav-links .nav-link {
+  padding: inherit;
+}
+
+.navbar .site-name {
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  color: #161616;
+  line-height: 2.15rem;
+}
+
+.sidebar-button .icon {
+  color: #FFF;
+}
+
+.search-box input {
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 3px !important;
+    font-size: 1rem !important;
+    background: #ffffff1a url(/assets/img/search.83621669.svg) 0.6rem 0.5rem no-repeat !important;
+    background-size: 1rem !important;
+}
+
+@media (max-width: 959px) {
+  .search-box input {
+      background: #fff0 url(/assets/img/search.83621669.svg) 0.6rem 0.5rem no-repeat !important;
+      background-size: 1rem !important;
+
+      &:focus {
+        background: #ffffff1a url(/assets/img/search.83621669.svg) 0.6rem 0.5rem no-repeat !important;
+        background-size: 1rem !important;
+      }
+  }
+}
