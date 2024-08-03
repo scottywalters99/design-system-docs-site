@@ -7,7 +7,7 @@
     "name": "Scotty Walters",
     "email": "scottywalters99@gmail.com"
   },
-  "repository": "https://github.com/scottywalters/design-system.git/design-system",
+  "repository": "https://github.com/scottywalters99/design-system-docs-site.git",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",

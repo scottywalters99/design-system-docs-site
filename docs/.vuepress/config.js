@@ -15,7 +15,7 @@ module.exports = {
    *  Theme configuration - https://vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: "scottywalters/design-system-docs",
+    repo: "scottywalters99/design-system-docs-site",
     docsBranch: 'main',
     docsDir: "docs",
     logo: '/pc-logo.svg',
